@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- final_project_interface.php -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test SQL Injection</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="interface">
+    <div class="center_div">
+      <h2>
+        Enter a candidate's name to view their job history and a list of their
+        qualifications
+      </h2>
+      <p></p>
+      <form method="get" action="final_project_interface.php">
+        <p>Search: <input type="text" name="value1" /></p>
+
+        <p>
+          <input type="submit" name="submit" value="Submit" />
+        </p>
+      </form>
+
+      <br /><br /><br /><br />
+
+      <h1>-- Post an Opening --</h1>
+
+      <h4>
+        Enter your Company ID, the Required Qualification ID, The Start and End
+        dates, and lastly the Hourly Pay.
+      </h4>
+      <p></p>
+      <form method="post" action="CompOpen.php">
+        <p>OpeningID: <input type="text" name="value0" /></p>
+        <p>CompanyID: <input type="text" name="value1" /></p>
+        <p>
+          QualificationID:
+          <input type="text" name="value2" />
+        </p>
+        <p>Start Date: <input type="text" name="value3" /></p>
+        <p>End Date: <input type="text" name="value4" /></p>
+        <p>Hourly Pay: <input type="text" name="value5" /></p>
+
+        <p>
+          <input type="submit" name="submit" value="Submit" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
